@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2 website</title>
+    <style>
+  /* 1. Reset + base page setup so the card sits centered on a neutral page */
+  * {
+    box-sizing: border-box; /* padding/border counted inside width, not added on top */
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f3f3;              /* the light grey page background behind the card */
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  /* 2. The pink card itself */
+  .card {
+    width: 360px;
+    background: #f7889a;              /* the pink/salmon fill */
+    border-radius: 28px;              /* big rounded corners */
+    padding: 50px 35px 40px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  /* 3. Circular photo with a ring around it */
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;               /* turns a square image into a circle */
+    object-fit: cover;                /* crops the photo to fill the circle without distortion */
+    border: 3px solid #888;           /* the thin grey ring */
+    margin-bottom: 28px;
+  }
+
+  /* 4. Title text */
+  .title {
+    margin: 0 0 18px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #1c1c1c;
+  }
+
+  /* 5. Body / bio text */
+  .bio {
+    margin: 0 0 30px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #2b2b2b;
+  }
+
+  /* 6. Row of social icon buttons */
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .socials a {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2e3338;              /* dark square button */
+    border-radius: 10px;
+    color: #f7889a;                   /* icon color matches the card's pink */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.15s ease; /* small hover animation */
+  }
+
+  .socials a:hover {
+    transform: translateY(-3px);
+  }
+</style>
+</head>
+<body>
+    <div class="card">
+    <img
+      class="avatar"
+      src="/Week2/image/ceejay.jpg" alt="Profile photo">
+
+    <h2 class="title">Web Developer</h2>
+
+    <p class="bio">
+      My name is CeeJay. I am a Networking enthusiast. 
+      My goal is to become a full stack web developer. I am currently learning HTML,CSS and Javascript.
+       I am always looking forward to learninng new things on the web development field. I am also a student at RoarHub UNN and I am currently learning the basics of web development. 
+    </p>
+
+    <div class="socials">
+      <a href="#" aria-label="X / Twitter">𝕏</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="Behance">Bē</a>
+    </div>
+  </div>
+
+</body>
+</html>

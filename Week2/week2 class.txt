@@ -1,0 +1,4 @@
+To duplicate a line of code press shift+alt+down
+To clear everythin in your terminal type cls
+To create a new folder or dir, use the command: mkdir {my folder}
+to list folders or files in a particular directory, use the command: dir
